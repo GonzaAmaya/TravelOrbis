@@ -1,0 +1,24 @@
+[
+    {
+    "categoria": "Vuelos",
+    "items": [
+        { "nombre": "Aerolíneas Argentinas", "logo": "/reservas/aerolineas-argentinas.webp" },
+        { "nombre": "JetSmart", "logo": "/reservas/jetsmart.webp" },
+        { "nombre": "Despegar", "logo": "/reservas/despegar.webp" }
+    ]
+    },
+    {
+    "categoria": "Alojamiento",
+    "items": [
+        { "nombre": "Airbnb", "logo": "/reservas/airbnb-logo.webp" },
+        { "nombre": "Booking", "logo": "/reservas/booking.webp" }
+    ]
+    },
+    {
+    "categoria": "Paquetes",
+    "items": [
+        { "nombre": "AlMundo", "logo": "/reservas/logo-almundo.webp" },
+        { "nombre": "Despegar", "logo": "/reservas/despegar.webp" }
+    ]
+    }
+]

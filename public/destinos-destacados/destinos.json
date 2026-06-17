@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Bariloche",
+        "pais": "Argentina",
+        "imagen": "./public/destinos-destacados/bariloche.webp"
+    },
+    {
+        "nombre": "Cataratas del Iguazú",
+        "pais": "Argentina",
+        "imagen": "./public/destinos-destacados/cataratas.webp"
+    },
+    {
+        "nombre": "Rio de Janeiro",
+        "pais": "Brasil",
+        "imagen": "./public/destinos-destacados/cristo.webp"
+    },
+    {
+        "nombre": "Isla de San Andrés",
+        "pais": "Colombia",
+        "imagen": "./public/destinos-destacados/san-andres.webp"
+    },
+    {
+        "nombre":"Machu Picchu",
+        "pais": "Perú",
+        "imagen": "./public/destinos-destacados/machu-picchu.webp"
+    },
+    {
+        "nombre": "La Patagonia",
+        "pais": "Argentina - Chile",
+        "imagen": "./public/destinos-destacados/patagonia.webp"
+    }
+]

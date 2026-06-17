@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "Argentina",
+        "imagen": "/public/paises/argentina.webp"
+    },
+    {
+        "nombre": "Brasil",
+        "imagen": "/public/paises/brasil.webp"
+    },
+    {
+        "nombre": "Colombia",
+        "imagen": "/public/paises/colombia.webp"
+    },
+    {
+        "nombre": "Perú",
+        "imagen": "/public/paises/peru.webp"
+    },
+    {
+        "nombre": "Chile",
+        "imagen": "/public/paises/chile.webp"
+    },
+    {
+        "nombre": "Venezuela",
+        "imagen": "/public/paises/venezuela.webp"   
+    },
+    {
+        "nombre": "Bolivia",
+        "imagen": "/public/paises/bolivia.webp"
+    },
+    {
+        "nombre": "Ecuador",
+        "imagen": "/public/paises/ecuador.webp"
+    },
+    {
+        "nombre": "Paraguay",
+        "imagen": "/public/paises/paraguay.webp"
+    },
+    {
+        "nombre": "Uruguay",
+        "imagen": "/public/paises/uruguay.webp"
+    }
+]
