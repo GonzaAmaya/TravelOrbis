@@ -56,3 +56,39 @@
     color: #666;
     font-size: 1rem;
 }
+
+/*Responsive*/
+
+/* Tablet (hasta 1024px) */
+@media (max-width: 1024px) {
+    .destinos__grid {
+    grid-template-columns: repeat(2, 1fr);  /* 3 → 2 columnas */
+    padding: 30px 40px;
+    }
+}
+
+/* Mobile (hasta 768px) */
+@media (max-width: 768px) {
+    .destinos h2 {
+    font-size: 1.4rem;
+    padding: 16px;
+    }
+
+    .destinos__grid {
+    grid-template-columns: 1fr;  /* 1 columna */
+    padding: 20px 16px;
+    gap: 16px;
+    }
+
+    .card img {
+    height: 180px;  /* un poco menos de altura en mobile */
+    }
+
+    .card_info h3 {
+    font-size: 0.95rem;
+    }
+
+    .card_info p {
+    font-size: 0.8rem;
+    }
+}

@@ -114,3 +114,79 @@
   text-align: center;
   margin: 0;
 }
+
+/* Tablet (hasta 1024px) */
+@media (max-width: 1024px) {
+  .reservas__grid {
+    grid-template-columns: repeat(2, 1fr);  /* 3 → 2 columnas */
+  }
+
+  .reservas__categoria--alojamiento .reserva__card {
+    width: 240px;
+  }
+
+  .reservas__categoria--paquetes .reservas__grid {
+    max-width: 100%;
+  }
+}
+
+/*Responsive*/
+
+/* Mobile (hasta 768px) */
+@media (max-width: 768px) {
+  #reservas {
+    padding: 30px 16px;
+  }
+
+  .titulo h2 {
+    font-size: 1.4rem;
+    padding: 16px;
+  }
+
+  .titulo p {
+    font-size: 0.9rem;
+    padding: 0 16px 16px;
+  }
+
+  .reservas__categoria {
+    margin-bottom: 30px;
+  }
+
+  /* Todas las grids a 1 columna */
+  .reservas__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Alojamiento: columna centrada */
+  .reservas__categoria--alojamiento .reservas__grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reservas__categoria--alojamiento .reserva__card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* Paquetes: vuelve a vertical en mobile */
+  .reservas__categoria--paquetes .reservas__grid {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .reservas__categoria--paquetes .reserva__card {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .reservas__categoria--paquetes .reserva__card img {
+    width: 120px;
+    height: 60px;
+    margin-bottom: 8px;
+  }
+
+  .reserva__card img {
+    width: 100px;
+    height: 55px;
+  }
+}

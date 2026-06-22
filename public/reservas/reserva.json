@@ -2,25 +2,25 @@
     {
     "categoria": "Vuelos",
     "items": [
-        { "nombre": "Aerolíneas Argentinas", "logo": "/reservas/aerolineas-argentinas.webp" },
-        { "nombre": "JetSmart", "logo": "/reservas/jetsmart.webp" },
-        { "nombre": "Despegar", "logo": "/reservas/despegar.webp" }
+        { "nombre": "Aerolíneas Argentinas", "logo": "/reservas/aerolineas-argentinas.webp", "link": "https://www.aerolineas.com.ar/" },
+        { "nombre": "JetSmart", "logo": "/reservas/jetsmart.webp", "link": "https://jetsmart.com/ar/es/"},
+        { "nombre": "Despegar", "logo": "/reservas/despegar.webp", "link": "https://www.despegar.com.ar/" }
     ]
     },
     {
     "categoria": "Alojamiento",
     "items": [
-        { "nombre": "Airbnb", "logo": "/reservas/airbnb-logo.webp" },
-        { "nombre": "Booking", "logo": "/reservas/booking.webp" },
-        { "nombre": "Trivago", "logo": "/reservas/Trivago-Logo.webp"}
+        { "nombre": "Airbnb", "logo": "/reservas/airbnb-logo.webp", "link": "https://www.airbnb.com.ar/" },
+        { "nombre": "Booking", "logo": "/reservas/booking.webp", "link": "https://www.booking.com"},
+        { "nombre": "Trivago", "logo": "/reservas/Trivago-Logo.webp", "link": "https://www.trivago.com.ar/"}
     ]
     },
     {
     "categoria": "Paquetes",
     "items": [
-        { "nombre": "AlMundo", "logo": "/reservas/logo-almundo.webp" },
-        { "nombre": "Despegar", "logo": "/reservas/despegar.webp" },
-        { "nombre": "Viajes TDH", "logo": "/reservas/Viajes-TDH.webp"}
+        { "nombre": "AlMundo", "logo": "/reservas/logo-almundo.webp", "link": "https://almundo.com.ar/" },
+        { "nombre": "Despegar", "logo": "/reservas/despegar.webp", "link": "https://www.despegar.com.ar/" },
+        { "nombre": "Viajes TDH", "logo": "/reservas/Viajes-TDH.webp", "link": "https://www.viajestdh.com.ar/flights"}
     ]
     }
 ]

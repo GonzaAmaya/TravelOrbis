@@ -57,3 +57,35 @@
     font-size: 1rem;
     font-weight: 600;
 }
+
+/*Responsive*/
+
+/* Tablet (hasta 1024px) */
+@media (max-width: 1024px) {
+    .paises__grid {
+    grid-template-columns: repeat(3, 1fr);  /* 4 → 3 columnas */
+    padding: 30px 40px;
+    }
+}
+
+/* Mobile (hasta 768px) */
+@media (max-width: 768px) {
+    .paises h2 {
+    font-size: 1.4rem;
+    padding: 16px;
+    }
+
+    .paises__grid {
+    grid-template-columns: repeat(2, 1fr);  /* 2 columnas */
+    padding: 20px 16px;
+    gap: 10px;
+    }
+
+    .paises__grid .card {
+    height: 100px;  /* un poco menos de altura */
+    }
+
+    .paises__grid .card_info h3 {
+    font-size: 0.85rem;
+    }
+}
