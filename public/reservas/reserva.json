@@ -11,14 +11,16 @@
     "categoria": "Alojamiento",
     "items": [
         { "nombre": "Airbnb", "logo": "/reservas/airbnb-logo.webp" },
-        { "nombre": "Booking", "logo": "/reservas/booking.webp" }
+        { "nombre": "Booking", "logo": "/reservas/booking.webp" },
+        { "nombre": "Trivago", "logo": "/reservas/Trivago-Logo.webp"}
     ]
     },
     {
     "categoria": "Paquetes",
     "items": [
         { "nombre": "AlMundo", "logo": "/reservas/logo-almundo.webp" },
-        { "nombre": "Despegar", "logo": "/reservas/despegar.webp" }
+        { "nombre": "Despegar", "logo": "/reservas/despegar.webp" },
+        { "nombre": "Viajes TDH", "logo": "/reservas/Viajes-TDH.webp"}
     ]
     }
 ]

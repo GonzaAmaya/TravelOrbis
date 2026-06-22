@@ -1,71 +1,68 @@
-/* ============================================
-   SECCIÓN RESERVAS
-   ============================================ */
 #reservas {
-  background-color: #f0f4f8;
-  padding: 60px 40px;
+  background-color: #f5d9b8;  /* mismo durazno que el resto de la página */
 }
 
-#reservas h2 {
+#reservas .titulo{
+    background: #1a2f4e;
+}
+
+#reservas .titulo h2 {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  color: #1a2a4a;
+  color: #ffffff;
   margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-family: serif;          /* coincide con tus otros títulos */
 }
 
-#reservas > p {
+#reservas .titulo p {
   text-align: center;
-  color: #666;
+  color: #c9d4e3;
   font-size: 1rem;
   margin-bottom: 40px;
 }
 
-/* Cada categoría (Vuelos, Alojamiento, Paquetes) */
+/* Cada categoría */
 .reservas__categoria {
   max-width: 1100px;
   margin: 0 auto 50px auto;
 }
 
 .reservas__categoria h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #1a2a4a;
-  border-left: 4px solid #f0a500;
+  border-left: 4px solid #1a2a4a;  /* navy en vez de naranja, ya que el fondo ya es naranja */
   padding-left: 12px;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* Grid base (por defecto, 3 columnas) */
+/* Grid base: 3 columnas (Vuelos) */
 .reservas__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 16px;
 }
 
-/* VUELOS: se queda con el grid de 3 columnas */
-
-/* ALOJAMIENTO: fila centrada con ancho fijo por card */
+/* ALOJAMIENTO: fila centrada */
 .reservas__categoria--alojamiento .reservas__grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 .reservas__categoria--alojamiento .reserva__card {
-  width: 300px;
+  width: 280px;
 }
 
-/* PAQUETES: cards horizontales, una debajo de otra */
+/* PAQUETES: cards horizontales */
 .reservas__categoria--paquetes .reservas__grid {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -75,43 +72,43 @@
   align-items: center;
   justify-content: flex-start;
   gap: 24px;
-  padding: 16px 30px;
+  padding: 14px 24px;
 }
 
 .reservas__categoria--paquetes .reserva__card img {
   width: 100px;
-  height: 60px;
+  height: 55px;
   margin-bottom: 0;
 }
 
-/* Card base, aplica a todas */
+/* Card base, igual estilo que las cards de Destinos */
 .reserva__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px 16px;
-  border-radius: 12px;
+  padding: 20px 16px;
+  border-radius: 8px;          /* mismo radio que tus otras cards */
   background-color: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
 }
 
 .reserva__card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 
 .reserva__card img {
-  width: 130px;
-  height: 70px;
+  width: 120px;
+  height: 60px;
   object-fit: contain;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .reserva__card p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #1a2a4a;
   text-align: center;

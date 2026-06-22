@@ -6,7 +6,8 @@
 
 body, html {
   width: 100%;
-  overflow-x: hidden;  
+  overflow-x: hidden;
+  background-color: #f5d9b8;  
 }
 
 .carousel {
@@ -86,5 +87,6 @@ body, html {
 
 footer{
   justify-items: center;
+  background-color: #f7d09dbe;
 }
 

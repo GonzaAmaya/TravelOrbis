@@ -12,8 +12,10 @@ function Reservas() {
 
     return (
     <section id="reservas">
+        <div className="titulo">
         <h2>Prepara tu viaje</h2>
         <p>Todo lo que necesitas para tu próxima aventura en un solo lugar.</p>
+        </div>
         {categorias.map((cat, i) => (
         <div className="reservas__categoria" key={i}>
             <h3>{cat.categoria}</h3>

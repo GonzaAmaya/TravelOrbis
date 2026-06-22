@@ -31,7 +31,7 @@ export default function Navbar() {
 
       {/* Botón derecha */}
       <div className="navbar__cta">
-        <a href="/reservar" className="navbar__btn">Reservar</a>
+        <a onClick={() => scrollTo("reservas")} className="navbar__btn">Reservar</a>
       </div>
     </nav>
   );
