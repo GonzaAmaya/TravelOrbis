@@ -16,14 +16,16 @@ function Reservas() {
         <h2>Prepara tu viaje</h2>
         </div>
         {categorias.map((cat, i) => (
-        <div className="reservas__categoria" key={i}>
+        <div className={`reservas__categoria reservas__categoria--${cat.categoria.toLowerCase()}`} key={i}>
             <h3>{cat.categoria}</h3>
             <div className="reservas__grid">
             {cat.items.map((item, j) => (
-                <div className="reserva__card" key={j}>
-                <img src={item.logo} alt={item.nombre} />
-                <p>{item.nombre}</p>
+                <a href={item.link} target="_blank" rel="noopener noreferrer" key={j}>
+                <div className="reserva__card">
+                    <img src={item.logo} alt={item.nombre} />
+                    <p>{item.nombre}</p>
                 </div>
+                </a>
             ))}
             </div>
         </div>

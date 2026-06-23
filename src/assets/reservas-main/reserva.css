@@ -1,9 +1,12 @@
 #reservas {
-  background-color: #f5d9b8;  /* mismo durazno que el resto de la página */
+  background-color: #f5d9b8;
+  padding: 0 0 60px 0;
 }
 
-#reservas .titulo{
-    background: #1a2f4e;
+#reservas .titulo {
+  background: #1a2f4e;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
 #reservas .titulo h2 {
@@ -11,88 +14,96 @@
   font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 10px;
-  font-family: serif;          /* coincide con tus otros títulos */
+  margin: 0 0 8px 0;
+  font-family: serif;
 }
 
 #reservas .titulo p {
   text-align: center;
   color: #c9d4e3;
   font-size: 1rem;
-  margin-bottom: 40px;
+  margin: 0;
 }
 
-/* Cada categoría */
 .reservas__categoria {
   max-width: 1100px;
   margin: 0 auto 50px auto;
+  padding: 0 20px;
 }
 
 .reservas__categoria h3 {
   font-size: 1.1rem;
   font-weight: 600;
   color: #1a2a4a;
-  border-left: 4px solid #1a2a4a;  /* navy en vez de naranja, ya que el fondo ya es naranja */
+  border-left: 4px solid #1a2a4a;
   padding-left: 12px;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* Grid base: 3 columnas (Vuelos) */
 .reservas__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 
-/* ALOJAMIENTO: fila centrada */
 .reservas__categoria--alojamiento .reservas__grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
   gap: 16px;
+  max-width: 100%;
+  margin: 0;
 }
 
 .reservas__categoria--alojamiento .reserva__card {
-  width: 280px;
+  flex-direction: column;  /* logo arriba, texto abajo, igual que las otras */
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px;
+  gap: 0;
 }
 
-/* PAQUETES: cards horizontales */
+.reservas__categoria--alojamiento .reserva__card img {
+  width: 120px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
 .reservas__categoria--paquetes .reservas__grid {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  max-width: 700px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 16px;
+  max-width: 100%;
+  margin: 0;
 }
 
 .reservas__categoria--paquetes .reserva__card {
-  flex-direction: row;
+  flex-direction: column;  /* logo arriba, texto abajo, igual que las otras */
   align-items: center;
-  justify-content: flex-start;
-  gap: 24px;
-  padding: 14px 24px;
+  justify-content: center;
+  padding: 20px 16px;
+  gap: 0;
 }
 
 .reservas__categoria--paquetes .reserva__card img {
-  width: 100px;
-  height: 55px;
-  margin-bottom: 0;
+  width: 120px;
+  height: 60px;
+  margin-bottom: 10px;
 }
 
-/* Card base, igual estilo que las cards de Destinos */
 .reserva__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px 16px;
-  border-radius: 8px;          /* mismo radio que tus otras cards */
+  border-radius: 8px;
   background-color: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: pointer;
+  height: 100%;
 }
 
 .reserva__card:hover {
@@ -115,10 +126,14 @@
   margin: 0;
 }
 
-/* Tablet (hasta 1024px) */
+.reservas__grid a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 1024px) {
   .reservas__grid {
-    grid-template-columns: repeat(2, 1fr);  /* 3 → 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .reservas__categoria--alojamiento .reserva__card {
@@ -130,12 +145,9 @@
   }
 }
 
-/*Responsive*/
-
-/* Mobile (hasta 768px) */
 @media (max-width: 768px) {
   #reservas {
-    padding: 30px 16px;
+    padding: 0 0 30px 0;
   }
 
   .titulo h2 {
@@ -152,12 +164,10 @@
     margin-bottom: 30px;
   }
 
-  /* Todas las grids a 1 columna */
   .reservas__grid {
     grid-template-columns: 1fr;
   }
 
-  /* Alojamiento: columna centrada */
   .reservas__categoria--alojamiento .reservas__grid {
     flex-direction: column;
     align-items: center;
@@ -168,7 +178,6 @@
     max-width: 400px;
   }
 
-  /* Paquetes: vuelve a vertical en mobile */
   .reservas__categoria--paquetes .reservas__grid {
     flex-direction: column;
     max-width: 100%;
@@ -191,7 +200,7 @@
   }
 }
 
-/* Mobile chico (hasta 480px) */
+
 @media (max-width: 480px) {
   .reservas__categoria h3 {
     font-size: 0.95rem;
