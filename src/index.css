@@ -138,5 +138,23 @@ footer{
   #busqueda {
     width: 100%;
   }
+
+  footer {
+    padding: 16px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
 }
+
+/* Mobile chico (hasta 480px) */
+@media (max-width: 480px) {
+  .carousel {
+    height: 50vh;
+  }
+
+  .carousel__contenido h1 {
+    font-size: 1.4rem;
+  }
+}
+
 

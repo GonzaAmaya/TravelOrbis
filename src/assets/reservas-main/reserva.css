@@ -190,3 +190,14 @@
     height: 55px;
   }
 }
+
+/* Mobile chico (hasta 480px) */
+@media (max-width: 480px) {
+  .reservas__categoria h3 {
+    font-size: 0.95rem;
+  }
+
+  .reserva__card p {
+    font-size: 0.8rem;
+  }
+}

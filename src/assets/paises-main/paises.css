@@ -89,3 +89,15 @@
     font-size: 0.85rem;
     }
 }
+
+/* Mobile chico (hasta 480px) */
+@media (max-width: 480px) {
+    .paises__grid {
+    grid-template-columns: 1fr;  /* 1 columna */
+    padding: 16px 10px;
+    }
+
+    .paises__grid .card {
+    height: 120px;
+    }
+}

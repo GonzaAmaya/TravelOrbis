@@ -92,3 +92,14 @@
     font-size: 0.8rem;
     }
 }
+
+/* Mobile chico (hasta 480px) */
+@media (max-width: 480px) {
+    .destinos__grid {
+    padding: 16px 10px;
+    }
+
+    .card img {
+    height: 150px;
+    }
+}

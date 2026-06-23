@@ -135,3 +135,19 @@
     font-size: 0.85rem;
   }
 }
+
+/* Mobile chico (hasta 480px) */
+@media (max-width: 480px) {
+  .navbar__links {
+    gap: 10px;
+  }
+
+  .navbar__link {
+    font-size: 0.8rem;
+  }
+
+  .navbar__btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
