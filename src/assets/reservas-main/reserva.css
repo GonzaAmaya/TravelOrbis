@@ -1,3 +1,7 @@
+/* ============================================
+   SECCIÓN RESERVAS
+   ============================================ */
+
 #reservas {
   background-color: #f5d9b8;
   padding: 0 0 60px 0;
@@ -42,56 +46,18 @@
   letter-spacing: 1px;
 }
 
-.reservas__grid {
+/* Grid base: 3 columnas (todas las categorías) */
+.reservas__grid,
+.reservas__categoria--alojamiento .reservas__grid,
+.reservas__categoria--paquetes .reservas__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-}
-
-.reservas__categoria--alojamiento .reservas__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);  
-  gap: 16px;
   max-width: 100%;
   margin: 0;
 }
 
-.reservas__categoria--alojamiento .reserva__card {
-  flex-direction: column;  /* logo arriba, texto abajo, igual que las otras */
-  align-items: center;
-  justify-content: center;
-  padding: 20px 16px;
-  gap: 0;
-}
-
-.reservas__categoria--alojamiento .reserva__card img {
-  width: 120px;
-  height: 60px;
-  margin-bottom: 10px;
-}
-
-.reservas__categoria--paquetes .reservas__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);  
-  gap: 16px;
-  max-width: 100%;
-  margin: 0;
-}
-
-.reservas__categoria--paquetes .reserva__card {
-  flex-direction: column;  /* logo arriba, texto abajo, igual que las otras */
-  align-items: center;
-  justify-content: center;
-  padding: 20px 16px;
-  gap: 0;
-}
-
-.reservas__categoria--paquetes .reserva__card img {
-  width: 120px;
-  height: 60px;
-  margin-bottom: 10px;
-}
-
+/* Card base */
 .reserva__card {
   display: flex;
   flex-direction: column;
@@ -126,22 +92,17 @@
   margin: 0;
 }
 
+/* Links sin estilo */
 .reservas__grid a {
   text-decoration: none;
   color: inherit;
 }
 
 @media (max-width: 1024px) {
-  .reservas__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .reservas__categoria--alojamiento .reserva__card {
-    width: 240px;
-  }
-
+  .reservas__grid,
+  .reservas__categoria--alojamiento .reservas__grid,
   .reservas__categoria--paquetes .reservas__grid {
-    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -150,12 +111,12 @@
     padding: 0 0 30px 0;
   }
 
-  .titulo h2 {
+  #reservas .titulo h2 {
     font-size: 1.4rem;
     padding: 16px;
   }
 
-  .titulo p {
+  #reservas .titulo p {
     font-size: 0.9rem;
     padding: 0 16px 16px;
   }
@@ -164,46 +125,46 @@
     margin-bottom: 30px;
   }
 
-  .reservas__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .reservas__categoria--alojamiento .reservas__grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .reservas__categoria--alojamiento .reserva__card {
-    width: 100%;
-    max-width: 400px;
-  }
-
+  .reservas__grid,
+  .reservas__categoria--alojamiento .reservas__grid,
   .reservas__categoria--paquetes .reservas__grid {
-    flex-direction: column;
-    max-width: 100%;
+    grid-template-columns: 1fr;
+    display: grid;
   }
 
-  .reservas__categoria--paquetes .reserva__card {
+  .reserva__card {
+    width: 100%;
     flex-direction: column;
-    padding: 16px;
-  }
-
-  .reservas__categoria--paquetes .reserva__card img {
-    width: 120px;
-    height: 60px;
-    margin-bottom: 8px;
+    padding: 20px 16px;
   }
 
   .reserva__card img {
-    width: 100px;
-    height: 55px;
+    width: 120px;
+    height: 60px;
+    margin-bottom: 10px;
   }
 }
 
-
 @media (max-width: 480px) {
+  .reservas__grid,
+  .reservas__categoria--alojamiento .reservas__grid,
+  .reservas__categoria--paquetes .reservas__grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
   .reservas__categoria h3 {
     font-size: 0.95rem;
+  }
+
+  .reserva__card {
+    padding: 14px 12px;
+  }
+
+  .reserva__card img {
+    width: 90px;
+    height: 50px;
+    margin-bottom: 8px;
   }
 
   .reserva__card p {
