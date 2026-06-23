@@ -115,39 +115,35 @@
 /* Responsive */
 @media (max-width: 768px) {
   .navbar {
-    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 16px;
+    gap: 8px;
   }
 
-  .navbar--scrolled {
-    padding: 0.6rem 1.5rem;
+  .navbar__logo img {
+    height: 30px;
   }
 
   .navbar__links {
-    gap: 1.4rem;
-  }
-
-  .navbar__link {
-    font-size: 0.85rem;
-  }
-
-  .navbar__btn {
-    padding: 0.45rem 1.1rem;
-    font-size: 0.85rem;
-  }
-}
-
-/* Mobile chico (hasta 480px) */
-@media (max-width: 480px) {
-  .navbar__links {
-    gap: 10px;
+    order: 3;
+    width: 100%;
+    justify-content: space-around;  
+    padding: 8px 0 4px 0;
+    gap: 0;  
   }
 
   .navbar__link {
     font-size: 0.8rem;
+  }
+
+  .navbar__cta {
+    order: 2;
   }
 
   .navbar__btn {
     padding: 6px 12px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    border-radius: 20px;
   }
 }

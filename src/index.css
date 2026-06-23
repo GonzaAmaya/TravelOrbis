@@ -95,7 +95,7 @@ footer{
 /* Tablet (hasta 1024px) */
 @media (max-width: 1024px) {
   .carousel {
-    height: 75vh;
+    height: 100vh;
   }
 
   .carousel__contenido h1 {
@@ -110,7 +110,7 @@ footer{
 /* Mobile (hasta 768px) */
 @media (max-width: 768px) {
   .carousel {
-    height: 60vh;
+    height: 100vh;
   }
 
   .carousel__contenido {
@@ -133,6 +133,7 @@ footer{
 
   #formulario-busqueda button {
     width: 100%;
+    padding: 10px;
   }
 
   #busqueda {
@@ -149,11 +150,15 @@ footer{
 /* Mobile chico (hasta 480px) */
 @media (max-width: 480px) {
   .carousel {
-    height: 50vh;
+    height: 100vh;
   }
 
   .carousel__contenido h1 {
     font-size: 1.4rem;
+  }
+
+  .carousel__contenido p{
+    font-size: 0.85rem;
   }
 }
 
